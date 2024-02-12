@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_FolderName="Demo_uipath1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_FolderName" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>844,4198.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>854,3949.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,15 +123,15 @@
       <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="742.6666666666666,4134" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="742.6666666666666,3884.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="680.6666666666666,136.66666666666666" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="javaw.exe" />
+    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="680.6666666666666,136.66666666666666" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="javaw.exe" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="680.6666666666666,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Starting with create folder&quot;]" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_RAC.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="680.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Login_RAC.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login_RAC.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="680.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Login_RAC.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
@@ -151,7 +151,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'javaw.exe My'" sap:VirtualizedContainerService.HintSize="580,2427.3333333333335" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="483470088737ced440e565a4165c2d65" Selector="&lt;wnd app='*.exe' cls='*' title='My Teamcenter*' /&gt;">
+          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'javaw.exe My'" sap:VirtualizedContainerService.HintSize="580,2427.3333333333335" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="483470088737ced440e565a4165c2d65" Selector="&lt;wnd app='*.exe' cls='*' title='My Teamcenter*' /&gt;">
             <ui:WindowScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -354,7 +354,7 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:WindowScope>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="580,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;folder created successfully - &quot;+in_FolderName]" />
-          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hello All,&#xA;&#xA;Folder &quot;+in_FolderName +&quot; Is created Successfully In Team Center&#xA;&#xA;Regards,&#xA;Dev_RPA&#xA;Robotic Process Automation&quot;]" DisplayName="Send SMTP Mail Message" Email="DevRpaBot@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="580,255.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_8" IgnoreCRL="False" IsBodyHtml="False" Password="wqcm dkzh mdhi ihbe" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Folder Creation Successful" To="rachana.mane@intelizign.com;kishore.chavan@intelizign.com">
+          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hello All,&#xA;&#xA;Folder &quot;+in_FolderName +&quot; Is created Successfully In Team Center&#xA;&#xA;Regards,&#xA;Dev_RPA&#xA;Robotic Process Automation&quot;]" DisplayName="Send SMTP Mail Message" Email="DevRpaBot@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="580,255.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_15" IgnoreCRL="False" IsBodyHtml="False" Password="nxoq omky fudj gade" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Folder Creation Successful" To="rachana.mane@intelizign.com;kishore.chavan@intelizign.com">
             <ui:SendMail.Files>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
             </ui:SendMail.Files>
@@ -393,7 +393,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hello All,&#xA;&#xA;Folder &quot;+in_FolderName +&quot; Is not created In Team Center due to &quot;+exception.Message+&quot;&#xA;&#xA;Regards,&#xA;Dev_RPA&#xA;Robotic Process Automation&quot;]" DisplayName="Send SMTP Mail Message" Email="DevRpaBot@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,255.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_9" IgnoreCRL="False" IsBodyHtml="False" Password="wqcm dkzh mdhi ihbe" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Folder Creation Failed" To="rachana.mane@intelizign.com">
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hello All,&#xA;&#xA;Folder &quot;+in_FolderName +&quot; Is not created In Team Center due to &quot;+exception.Message+&quot;&#xA;&#xA;Regards,&#xA;Dev_RPA&#xA;Robotic Process Automation&quot;]" DisplayName="Send SMTP Mail Message" Email="DevRpaBot@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,255.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_13" IgnoreCRL="False" IsBodyHtml="False" Password="nxoq omky fudj gade" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Folder Creation Failed" To="rachana.mane@intelizign.com">
                 <ui:SendMail.Files>
                   <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                 </ui:SendMail.Files>
@@ -403,21 +403,5 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Exit_RAC.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="680.6666666666666,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Exit_RAC.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hello All,&#xA;&#xA;Folder &quot;+in_FolderName +&quot; Is created Successfully In Team Center&#xA;&#xA;Regards,&#xA;Dev_RPA&#xA;Robotic Process Automation&quot;]" DisplayName="Send SMTP Mail Message" Email="DevRpaBot@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="680.6666666666666,54" sap2010:WorkflowViewState.IdRef="SendMail_11" IgnoreCRL="False" IsBodyHtml="False" Password="wqcm dkzh mdhi ihbe" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Folder Creation Successful" To="rachana.mane@intelizign.com">
-      <ui:SendMail.Files>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-      </ui:SendMail.Files>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:SendMail>
   </Sequence>
 </Activity>
