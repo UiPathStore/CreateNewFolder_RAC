@@ -26,6 +26,7 @@ steps:
     orchestratorConnection: 'Uipath'
     testSet: 'Rajesh'
     folderName: 'Karan'
+  condition: always()
 
 - task: UiPathTest@4
   inputs:
@@ -33,6 +34,7 @@ steps:
     orchestratorConnection: 'Uipath'
     testSet: 'Charushila'
     folderName: 'Karan'
+  condition: always()
 
 - task: UiPathTest@4
   inputs:
@@ -40,3 +42,4 @@ steps:
     orchestratorConnection: 'Uipath'
     testSet: 'Rachana'
     folderName: 'Karan'
+  condition: always()
