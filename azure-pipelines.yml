@@ -17,7 +17,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath'
-    testSet: 'Charushila'
+    testSet: 'Karan'
     folderName: 'Karan'
 
 - task: UiPathTest@4
@@ -31,7 +31,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath'
-    testSet: 'Karan'
+    testSet: 'Charushila'
     folderName: 'Karan'
 
 - task: UiPathTest@4
