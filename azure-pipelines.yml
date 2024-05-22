@@ -17,29 +17,6 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath'
-    testSet: 'Karan'
+    testSet: 'VariantMatrix_2312'
     folderName: 'Karan'
 
-- task: UiPathTest@4
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath'
-    testSet: 'Rajesh'
-    folderName: 'Karan'
-  condition: always()
-
-- task: UiPathTest@4
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath'
-    testSet: 'Charushila'
-    folderName: 'Karan'
-  condition: always()
-
-- task: UiPathTest@4
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath'
-    testSet: 'Rachana'
-    folderName: 'Karan'
-  condition: always()
