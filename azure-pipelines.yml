@@ -17,6 +17,6 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath'
-    testSet: 'ND_variantmatrix'
-    folderName: 'Karan'
+    testSet: 'karan'
+    folderName: 'VariantMatrix'
 
